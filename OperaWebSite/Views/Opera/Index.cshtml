@@ -1,0 +1,40 @@
+﻿@model IEnumerable<OperaWebSite.Models.Opera>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>@Html.ActionLink("Create New", "Create", "Opera")</p>
+<table>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Title)</th>
+        <th>@Html.DisplayNameFor(model => model.Composer)</th>
+        <th>@Html.DisplayNameFor(model => model.Year)</th>
+        <th>Details</th>
+        <th>Deletes</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Title)</td>
+            <td>@Html.DisplayFor(modelItem => item.Composer)</td>
+            <td>@Html.DisplayFor(modelItem => item.Year)</td>
+            <td>
+                @Html.ActionLink("Detail", "Detail", new { id = item.OperaId })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.OperaId })
+            </td>
+        </tr>
+    }
+</table>
+
+
+@section SideBarIzq
+    {
+    <img src="~/Content/img/teatro/11 National theatre Prague.jpg" />
+}
+@section SideBarDer
+    {
+    <img src="~/Content/img/teatro/Národní_divadlo_ze_Střeleckého_ostrova.jpg" />
+}

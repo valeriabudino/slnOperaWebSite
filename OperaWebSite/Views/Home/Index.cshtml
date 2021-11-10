@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div>
+
+    <h1>Bienvenido al sistema de operas</h1>
+    <p>Fecha @ViewBag.Fecha</p>
+    <p> @Html.ActionLink("Ir a operas", "Index", "Opera")</p>
+</div>
+
+
+
+@section SideBarIzq
+    {
+
+    <p>
+        El Teatro Nacional (en checo, Národní divadlo) de Praga es conocido como el alma mater
+        de la ópera checa y como el monumento nacional de la historia y el arte checos.
+    </p>
+
+    <p>
+        El Teatro Nacional es una de las instituciones culturales checas más importantes,
+        con una tradición artística muy rica que fue creada y mantenida por las personalidades más
+        distinguidas de la sociedad checa. Esta tradición ayudó a preservar y desarrollar las características más
+        importZantes de la nación: el idioma checo y un sentido para la manera de pensar musical y dramática checa.
+    </p>
+    <p>
+        Hoy en día el Teatro Nacional consta de tres conjuntos artísticos (ópera, ballet y drama) que 
+        alternan sus actuaciones en los edificios históricos del Teatro Nacional, el Teatro Estatal, la Ópera Estatal y 
+        el Teatro Karlín, además del anexo (Nová scéna) construido en 1983 para alojar la Lanterna magika. Estos tres 
+        conjuntos artísticos eligen su repertorio no solo de la herencia clásica checa, sino además de centrarse en autores 
+        locales también lo hacen en la producción mundial moderna.
+    </p>
+}
+@section SideBarDer
+    {
+
+    <img src="~/Content/img/teatro/11 National theatre Prague.jpg" />
+    <img src="~/Content/img/teatro/Národní_divadlo_ze_Střeleckého_ostrova.jpg" />
+    <img src="~/Content/img/teatro/teatro-nacional-de-praga-nota.jpg" />
+}

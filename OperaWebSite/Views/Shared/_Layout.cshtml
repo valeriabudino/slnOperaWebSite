@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="display:flex;">
+        <div id="banner">
+
+        </div>
+        <div id="login">
+
+        </div>
+    </div>
+    <div id="menu">
+        <p>@Html.ActionLink("Home", "Index", "Home")</p>
+        <p>@Html.ActionLink("Opera", "Index", "Opera")</p>
+        <p>@Html.ActionLink("Empleados", "Index", "Empleado")</p>
+    </div>
+
+    <div style="height:auto; display:flex;">
+
+        <div id="izq">
+            @if (IsSectionDefined("SideBarIzq"))
+            {
+                @RenderSection("SideBarIzq")
+            }
+            else
+            {
+                <h2>Zona editable opcional</h2>
+            }
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+        <div id="der">
+            @if (IsSectionDefined("SideBarDer"))
+            {
+                @RenderSection("SideBarDer")
+            }
+            else
+            {
+                <h2>Zona editable opcional</h2>
+            }
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>opera@praga.com</p>
+    </div>
+</body>
+</html>

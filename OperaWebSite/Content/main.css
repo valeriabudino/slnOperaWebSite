@@ -1,0 +1,65 @@
+﻿body {
+}
+#banner{
+    height:150px;
+    width:75%;
+    background-image: url(img/teatro/teatro-nacional-de-praga-nota.jpg);
+    background-repeat:no-repeat;
+    margin:0px;
+}
+#login {
+    float: right;
+    background-color: #5f1509;
+    height: 150px;
+    width: 45%;
+}
+#menu {
+    background-color: #0f2a37;
+/*  background-color:black;*/
+    align-content:center;
+    justify-content:flex-end;
+    align-items:center;
+    display:flex;
+    margin:0;
+    padding-right:10px;
+}
+#menu p a{
+    padding:5px;
+    color:white;
+    text-decoration:none;
+}
+#content {
+    width: 40%;
+    height: 100%;
+}
+#izq {
+    background-color: #5f1509;
+    padding: 20px;
+    height: 400px;
+    width: 30%;
+    height: 100%;
+    color: white;
+}
+#der {
+    display: grid;
+    background-color: #5f1509;
+    padding:20px;
+    width:30%;
+    height:100%;
+    color:white;
+
+}
+#footer {
+    padding: 10px;
+    background-color: #0f2a37;
+    clear: both;
+    height: max-content;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+img{
+    height:300px;
+    width:300px;
+
+}
